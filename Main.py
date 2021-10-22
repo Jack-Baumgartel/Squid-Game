@@ -165,6 +165,8 @@ while True:
             GAME_FONT.render_to(displaysurface, (WIDTH/2, HEIGHT/4),'Death!')
             death = True
             reset_count += 1
+            P1.pos = vec((25, HEIGHT- floor))
+            P1.vel.x = 0
             
         if reset_count > reset_time:
             death = False
